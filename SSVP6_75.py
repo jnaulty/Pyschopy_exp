@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy2 Experiment Builder (v1.80.06), June 27, 2014, at 21:05
+This experiment was created using PsychoPy2 Experiment Builder (v1.80.06), June 28, 2014, at 00:44
 If you publish work using this script please cite the relevant PsychoPy publications
   Peirce, JW (2007) PsychoPy - Psychophysics software in Python. Journal of Neuroscience Methods, 162(1-2), 8-13.
   Peirce, JW (2009) Generating stimuli for neuroscience using PsychoPy. Frontiers in Neuroinformatics, 2:10. doi: 10.3389/neuro.11.010.2008
@@ -72,6 +72,13 @@ fixation = visual.GratingStim(win=win, name='fixation',
     ori=0, pos=[0, 0], size=[0.05, 0.05], sf=None, phase=0.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     texRes=128, interpolate=True, depth=-1.0)
+    
+##start collecting
+from Python_OpenBCI import openbci, csv_collector
+
+collector = CSVCollector(fname = exp['participant'])
+
+collector.start()
 
 # Initialize components for Routine "InterTrial"
 InterTrialClock = core.Clock()
@@ -80,11 +87,7 @@ Fixation = visual.GratingStim(win=win, name='Fixation',
     ori=0, pos=[0, 0], size=[0.05, 0.05], sf=None, phase=0.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     texRes=128, interpolate=True, depth=0.0)
-import serial #BP Serial functions
-#-------BP serial port-------
-ser = serial.Serial('/dev/cu.usbserial-FTGQVV1C', baudrate=57600, bytesize=8, parity='N', stopbits=1, timeout=None, xonxoff=1) #xonxoff was 1
 
-import time #BP to use time.time
 
 # Initialize components for Routine "trial"
 trialClock = core.Clock()
@@ -192,6 +195,7 @@ t = 0
 BlankClock.reset()  # clock 
 frameN = -1
 # update component parameters for each repeat
+
 # keep track of which components have finished
 BlankComponents = []
 BlankComponents.append(text)
@@ -226,6 +230,7 @@ while continueRoutine:
     elif fixation.status == STARTED and frameN >= (fixation.frameNStart + 120):
         fixation.setAutoDraw(False)
     
+    
     # check if all components have finished
     if not continueRoutine:  # a component has requested a forced-end of Routine
         routineTimer.reset()  # if we abort early the non-slip timer needs reset
@@ -250,6 +255,7 @@ while continueRoutine:
 for thisComponent in BlankComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
+
 
 # set up handler to look after randomisation of conditions etc
 trials_120 = data.TrialHandler(nReps=120, method='random', 
@@ -325,11 +331,18 @@ for thisTrial_120 in trials_120:
     for thisComponent in InterTrialComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    firstLoop=True
+    #import serial #BP Serial functions
+    #-------BP serial port-------
+    #ser = serial.Serial('/dev/cu.usbserial-FTGQVV1C', baudrate=57600, bytesize=8, parity='N', stopbits=1, timeout=None, xonxoff=1) #xonxoff was 1
+    
+    #import time #BP to use time.time
+    
+    #No longer need this code.
+    
     
     
     # set up handler to look after randomisation of conditions etc
-    withinATrial_fill_4_sec = data.TrialHandler(nReps=30, method='sequential', 
+    withinATrial_fill_4_sec = data.TrialHandler(nReps=30, method=u'sequential', 
         extraInfo=expInfo, originPath=None,
         trialList=[None],
         seed=None, name='withinATrial_fill_4_sec')
@@ -352,18 +365,9 @@ for thisTrial_120 in trials_120:
         trialClock.reset()  # clock 
         frameN = -1
         # update component parameters for each repeat
-        # send time stamp
-        #if firstLoop==True:
-        #    t=time.time()#t=time.clock() # what is the difference?
-        #    timeString= "%.5f" %t
-        #    thisExp.addData('timestamp',timeString)
-        # send code
+        #tag data that is being collected.
         if firstLoop==True:
-            ser.write(chr(70)) # BP send code 70
-            firstLoop=False
-            thisExp.addData('CodeSent',70)
-        
-        
+            collector.tag()
         # keep track of which components have finished
         trialComponents = []
         trialComponents.append(pattern1)
@@ -512,6 +516,7 @@ while continueRoutine and routineTimer.getTime() > 0:
 for thisComponent in endOfExperimentComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
+
 ser.close() #BP
 
 win.close()

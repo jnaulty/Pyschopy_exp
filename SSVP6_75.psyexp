@@ -46,53 +46,21 @@
         <Param name="size" val="[0.05, 0.05]" valType="code" updates="constant"/>
       </GratingComponent>
       <CodeComponent name="Send_Code_Time">
-        <Param name="Begin Experiment" val="import serial #BP Serial functions&#10;#-------BP serial port-------&#10;ser = serial.Serial('/dev/cu.usbserial-FTGQVV1C', baudrate=57600, bytesize=8, parity='N', stopbits=1, timeout=None, xonxoff=1) #xonxoff was 1&#10;&#10;import time #BP to use time.time" valType="extendedCode" updates="constant"/>
+        <Param name="Begin Experiment" val="" valType="extendedCode" updates="constant"/>
         <Param name="name" val="Send_Code_Time" valType="code" updates="None"/>
         <Param name="Each Frame" val="" valType="extendedCode" updates="constant"/>
         <Param name="Begin Routine" val="" valType="extendedCode" updates="constant"/>
-        <Param name="End Routine" val="firstLoop=True&#10;" valType="extendedCode" updates="constant"/>
+        <Param name="End Routine" val="#import serial #BP Serial functions&#10;#-------BP serial port-------&#10;#ser = serial.Serial('/dev/cu.usbserial-FTGQVV1C', baudrate=57600, bytesize=8, parity='N', stopbits=1, timeout=None, xonxoff=1) #xonxoff was 1&#10;&#10;#import time #BP to use time.time&#10;&#10;#No longer need this code.&#10;&#10;" valType="extendedCode" updates="constant"/>
         <Param name="End Experiment" val="ser.close() #BP" valType="extendedCode" updates="constant"/>
       </CodeComponent>
     </Routine>
-    <Routine name="endOfExperiment">
-      <TextComponent name="ThankYou">
-        <Param name="opacity" val="1" valType="code" updates="constant"/>
-        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
-        <Param name="name" val="ThankYou" valType="code" updates="None"/>
-        <Param name="wrapWidth" val="" valType="code" updates="constant"/>
-        <Param name="color" val="white" valType="str" updates="constant"/>
-        <Param name="text" val="thank you" valType="str" updates="constant"/>
-        <Param name="stopVal" val="4" valType="code" updates="constant"/>
-        <Param name="durationEstim" val="" valType="code" updates="None"/>
-        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
-        <Param name="flip" val="" valType="str" updates="constant"/>
-        <Param name="startEstim" val="" valType="code" updates="None"/>
-        <Param name="units" val="from exp settings" valType="str" updates="None"/>
-        <Param name="startType" val="time (s)" valType="str" updates="None"/>
-        <Param name="ori" val="0" valType="code" updates="constant"/>
-        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
-        <Param name="startVal" val="3" valType="code" updates="None"/>
-        <Param name="font" val="Arial" valType="str" updates="constant"/>
-        <Param name="letterHeight" val="1.5" valType="code" updates="constant"/>
-      </TextComponent>
-      <SoundComponent name="sound_1">
-        <Param name="sound" val="A" valType="str" updates="constant"/>
-        <Param name="volume" val="1" valType="code" updates="constant"/>
-        <Param name="name" val="sound_1" valType="code" updates="None"/>
-        <Param name="stopVal" val="1" valType="code" updates="constant"/>
-        <Param name="durationEstim" val="" valType="code" updates="None"/>
-        <Param name="startEstim" val="" valType="code" updates="None"/>
-        <Param name="startType" val="time (s)" valType="str" updates="None"/>
-        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
-        <Param name="startVal" val="3.5" valType="code" updates="None"/>
-      </SoundComponent>
-    </Routine>
+    <Routine name="EndOfExperiment"/>
     <Routine name="trial">
       <CodeComponent name="code_timestamp">
         <Param name="Begin Experiment" val="" valType="extendedCode" updates="constant"/>
         <Param name="name" val="code_timestamp" valType="code" updates="None"/>
         <Param name="Each Frame" val="# Its going to write something for each frame, might as well put time stame&#10;t=time.time()#t=time.clock() # what is the difference?&#10;timeString= &quot;%.5f&quot; %t&#10;thisExp.addData('FrameTimeStamps',timeString)&#10;" valType="extendedCode" updates="constant"/>
-        <Param name="Begin Routine" val="# send time stamp&#10;#if firstLoop==True:&#10;#    t=time.time()#t=time.clock() # what is the difference?&#10;#    timeString= &quot;%.5f&quot; %t&#10;#    thisExp.addData('timestamp',timeString)&#10;# send code&#10;if firstLoop==True:&#10;    ser.write(chr(70)) # BP send code 70&#10;    firstLoop=False&#10;    thisExp.addData('CodeSent',70)&#10;&#10;" valType="extendedCode" updates="constant"/>
+        <Param name="Begin Routine" val="#tag data that is being collected.&#10;if firstLoop==True:&#10;    collector.tag()" valType="extendedCode" updates="constant"/>
         <Param name="End Routine" val="thisExp.addData('frameNumber',frameN)" valType="extendedCode" updates="constant"/>
         <Param name="End Experiment" val="" valType="extendedCode" updates="constant"/>
       </CodeComponent>
@@ -141,7 +109,39 @@
         <Param name="size" val="3" valType="code" updates="constant"/>
       </GratingComponent>
     </Routine>
-    <Routine name="EndOfExperiment"/>
+    <Routine name="endOfExperiment">
+      <TextComponent name="ThankYou">
+        <Param name="opacity" val="1" valType="code" updates="constant"/>
+        <Param name="colorSpace" val="rgb" valType="str" updates="constant"/>
+        <Param name="name" val="ThankYou" valType="code" updates="None"/>
+        <Param name="wrapWidth" val="" valType="code" updates="constant"/>
+        <Param name="color" val="white" valType="str" updates="constant"/>
+        <Param name="text" val="thank you" valType="str" updates="constant"/>
+        <Param name="stopVal" val="4" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="pos" val="[0, 0]" valType="code" updates="constant"/>
+        <Param name="flip" val="" valType="str" updates="constant"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="units" val="from exp settings" valType="str" updates="None"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="ori" val="0" valType="code" updates="constant"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="3" valType="code" updates="None"/>
+        <Param name="font" val="Arial" valType="str" updates="constant"/>
+        <Param name="letterHeight" val="1.5" valType="code" updates="constant"/>
+      </TextComponent>
+      <SoundComponent name="sound_1">
+        <Param name="sound" val="A" valType="str" updates="constant"/>
+        <Param name="volume" val="1" valType="code" updates="constant"/>
+        <Param name="name" val="sound_1" valType="code" updates="None"/>
+        <Param name="stopVal" val="1" valType="code" updates="constant"/>
+        <Param name="durationEstim" val="" valType="code" updates="None"/>
+        <Param name="startEstim" val="" valType="code" updates="None"/>
+        <Param name="startType" val="time (s)" valType="str" updates="None"/>
+        <Param name="stopType" val="duration (s)" valType="str" updates="None"/>
+        <Param name="startVal" val="3.5" valType="code" updates="None"/>
+      </SoundComponent>
+    </Routine>
     <Routine name="Blank">
       <TextComponent name="text">
         <Param name="opacity" val="1" valType="code" updates="constant"/>
@@ -185,6 +185,14 @@
         <Param name="sf" val="None" valType="code" updates="constant"/>
         <Param name="size" val="[0.05, 0.05]" valType="code" updates="constant"/>
       </GratingComponent>
+      <CodeComponent name="start_collecting">
+        <Param name="Begin Experiment" val="##start collecting&#10;from Python_OpenBCI import openbci, csv_collector&#10;&#10;collector = CSVCollector(fname = exp['participant'])&#10;&#10;collector.start()" valType="extendedCode" updates="constant"/>
+        <Param name="name" val="start_collecting" valType="code" updates="None"/>
+        <Param name="Each Frame" val="" valType="extendedCode" updates="constant"/>
+        <Param name="Begin Routine" val="" valType="extendedCode" updates="constant"/>
+        <Param name="End Routine" val="" valType="extendedCode" updates="constant"/>
+        <Param name="End Experiment" val="" valType="extendedCode" updates="constant"/>
+      </CodeComponent>
     </Routine>
     <Routine name="Instructions">
       <TextComponent name="instructions">
