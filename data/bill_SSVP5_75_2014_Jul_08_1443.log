@@ -1,0 +1,355 @@
+4.5441 	EXP 	Set Window color=[ 0.  0.  0.] (rgb)
+5.2553 	WARNING 	t of last frame was 35.81ms (=1/27)
+5.6296 	EXP 	Created instructions = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font=UNKNOWN, fontFiles=UNKNOWN, height=117, italic=False, name='instructions', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=unicode(...), units='cm', win=Window(...), wrapWidth=UNKNOWN)
+5.6318 	EXP 	Created text = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font=UNKNOWN, fontFiles=UNKNOWN, height=0, italic=False, name='text', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text='', units='cm', win=Window(...), wrapWidth=UNKNOWN)
+5.6411 	EXP 	Created fixation = GratingStim(autoDraw=False, autoLog=True, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, interpolate=True, mask=None, maskParams=None, name='fixation', opacity=1.0, ori=0.0, phase=array([ 0.,  0.]), pos=array([ 0.,  0.]), rgbPedestal=array([ 0.,  0.,  0.]), sf=array([ 1.,  1.]), size=array([ 0.05,  0.05]), tex='gauss', texRes=128, units='cm', win=Window(...))
+7.9655 	EXP 	Created Fixation = GratingStim(autoDraw=False, autoLog=True, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0.0, interpolate=True, mask=None, maskParams=None, name='Fixation', opacity=1.0, ori=0.0, phase=array([ 0.,  0.]), pos=array([ 0.,  0.]), rgbPedestal=array([ 0.,  0.,  0.]), sf=array([ 1.,  1.]), size=array([ 0.05,  0.05]), tex='gauss', texRes=128, units='cm', win=Window(...))
+7.9866 	EXP 	Created pattern1 = GratingStim(autoDraw=False, autoLog=True, color=array([ 1.,  1.,  1.]), colorSpace=u'rgb', contrast=1.0, depth=-1.0, interpolate=True, mask=None, maskParams=None, name='pattern1', opacity=1.0, ori=0.0, phase=array([ 0.,  0.]), pos=array([ 0.,  0.]), rgbPedestal=array([ 0.,  0.,  0.]), sf=array([ 1.,  1.]), size=array([ 3.,  3.]), tex=None, texRes=256, units=u'cm', win=Window(...))
+8.0042 	EXP 	Created pattern2 = GratingStim(autoDraw=False, autoLog=True, color=array([-1., -1., -1.]), colorSpace=u'rgb', contrast=1.0, depth=-2.0, interpolate=True, mask=None, maskParams=None, name='pattern2', opacity=1.0, ori=0.0, phase=array([ 0.,  0.]), pos=array([ 0.,  0.]), rgbPedestal=array([ 0.,  0.,  0.]), sf=array([ 1.,  1.]), size=array([ 3.,  3.]), tex=None, texRes=256, units=u'cm', win=Window(...))
+8.0802 	EXP 	Created ThankYou = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font=UNKNOWN, fontFiles=UNKNOWN, height=58, italic=False, name='ThankYou', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'thank you', units='cm', win=Window(...), wrapWidth=UNKNOWN)
+8.3551 	EXP 	Set  sound=A
+8.3552 	EXP 	Set Sound  volume=1.000
+8.4469 	EXP 	GratingStim: autoDraw = False
+8.4469 	EXP 	GratingStim: autoDraw = False
+8.4469 	EXP 	GratingStim: autoDraw = False
+8.4469 	EXP 	GratingStim: autoDraw = False
+8.4469 	EXP 	TextStim: autoDraw = True
+8.8754 	DATA 	Keypress: space
+8.8974 	EXP 	TextStim: autoDraw = False
+8.8974 	EXP 	TextStim: autoDraw = True
+8.8974 	EXP 	GratingStim: autoDraw = True
+10.9180 	EXP 	Created sequence: random, trialTypes=1, nReps=120, seed=None
+11.0840 	EXP 	New trial (rep=0, index=0): None
+11.0982 	EXP 	TextStim: autoDraw = False
+11.0982 	EXP 	GratingStim: autoDraw = False
+11.0982 	EXP 	TextStim: autoDraw = False
+11.0982 	EXP 	GratingStim: autoDraw = False
+11.0982 	EXP 	GratingStim: autoDraw = True
+13.0981 	EXP 	Created sequence: sequential, trialTypes=1, nReps=30, seed=None
+13.1017 	EXP 	New trial (rep=0, index=0): None
+13.1167 	EXP 	GratingStim: autoDraw = False
+13.1167 	EXP 	GratingStim: autoDraw = False
+13.1167 	EXP 	GratingStim: autoDraw = True
+13.1660 	EXP 	GratingStim: autoDraw = False
+13.1660 	EXP 	GratingStim: autoDraw = True
+13.1826 	EXP 	New trial (rep=1, index=0): None
+13.1989 	EXP 	GratingStim: autoDraw = False
+13.1989 	EXP 	GratingStim: autoDraw = False
+13.1989 	EXP 	GratingStim: autoDraw = False
+13.1989 	EXP 	GratingStim: autoDraw = True
+13.2479 	EXP 	GratingStim: autoDraw = False
+13.2479 	EXP 	GratingStim: autoDraw = True
+13.2729 	EXP 	New trial (rep=2, index=0): None
+13.2845 	EXP 	GratingStim: autoDraw = False
+13.2845 	EXP 	GratingStim: autoDraw = False
+13.2845 	EXP 	GratingStim: autoDraw = False
+13.2845 	EXP 	GratingStim: autoDraw = True
+13.3316 	EXP 	GratingStim: autoDraw = False
+13.3316 	EXP 	GratingStim: autoDraw = True
+13.3510 	EXP 	New trial (rep=3, index=0): None
+13.3641 	EXP 	GratingStim: autoDraw = False
+13.3641 	EXP 	GratingStim: autoDraw = False
+13.3641 	EXP 	GratingStim: autoDraw = False
+13.3641 	EXP 	GratingStim: autoDraw = True
+13.4159 	EXP 	GratingStim: autoDraw = False
+13.4159 	EXP 	GratingStim: autoDraw = True
+13.4329 	EXP 	New trial (rep=4, index=0): None
+13.4479 	EXP 	GratingStim: autoDraw = False
+13.4479 	EXP 	GratingStim: autoDraw = False
+13.4479 	EXP 	GratingStim: autoDraw = False
+13.4479 	EXP 	GratingStim: autoDraw = True
+13.5022 	EXP 	GratingStim: autoDraw = False
+13.5022 	EXP 	GratingStim: autoDraw = True
+13.5188 	EXP 	New trial (rep=5, index=0): None
+13.5336 	EXP 	GratingStim: autoDraw = False
+13.5336 	EXP 	GratingStim: autoDraw = False
+13.5336 	EXP 	GratingStim: autoDraw = False
+13.5336 	EXP 	GratingStim: autoDraw = True
+13.5838 	EXP 	GratingStim: autoDraw = False
+13.5838 	EXP 	GratingStim: autoDraw = True
+13.6007 	EXP 	New trial (rep=6, index=0): None
+13.6158 	EXP 	GratingStim: autoDraw = False
+13.6158 	EXP 	GratingStim: autoDraw = False
+13.6158 	EXP 	GratingStim: autoDraw = False
+13.6158 	EXP 	GratingStim: autoDraw = True
+13.6656 	EXP 	GratingStim: autoDraw = False
+13.6656 	EXP 	GratingStim: autoDraw = True
+13.6828 	EXP 	New trial (rep=7, index=0): None
+13.6979 	EXP 	GratingStim: autoDraw = False
+13.6979 	EXP 	GratingStim: autoDraw = False
+13.6979 	EXP 	GratingStim: autoDraw = False
+13.6979 	EXP 	GratingStim: autoDraw = True
+13.7489 	EXP 	GratingStim: autoDraw = False
+13.7489 	EXP 	GratingStim: autoDraw = True
+13.7689 	EXP 	New trial (rep=8, index=0): None
+13.7838 	EXP 	GratingStim: autoDraw = False
+13.7838 	EXP 	GratingStim: autoDraw = False
+13.7838 	EXP 	GratingStim: autoDraw = False
+13.7838 	EXP 	GratingStim: autoDraw = True
+13.8327 	EXP 	GratingStim: autoDraw = False
+13.8327 	EXP 	GratingStim: autoDraw = True
+13.8508 	EXP 	New trial (rep=9, index=0): None
+13.8656 	EXP 	GratingStim: autoDraw = False
+13.8656 	EXP 	GratingStim: autoDraw = False
+13.8656 	EXP 	GratingStim: autoDraw = False
+13.8656 	EXP 	GratingStim: autoDraw = True
+13.9147 	EXP 	GratingStim: autoDraw = False
+13.9147 	EXP 	GratingStim: autoDraw = True
+13.9328 	EXP 	New trial (rep=10, index=0): None
+13.9516 	EXP 	GratingStim: autoDraw = False
+13.9516 	EXP 	GratingStim: autoDraw = False
+13.9516 	EXP 	GratingStim: autoDraw = False
+13.9516 	EXP 	GratingStim: autoDraw = True
+14.0008 	EXP 	GratingStim: autoDraw = False
+14.0008 	EXP 	GratingStim: autoDraw = True
+14.0188 	EXP 	New trial (rep=11, index=0): None
+14.0339 	EXP 	GratingStim: autoDraw = False
+14.0339 	EXP 	GratingStim: autoDraw = False
+14.0339 	EXP 	GratingStim: autoDraw = False
+14.0339 	EXP 	GratingStim: autoDraw = True
+14.0828 	EXP 	GratingStim: autoDraw = False
+14.0828 	EXP 	GratingStim: autoDraw = True
+14.1008 	EXP 	New trial (rep=12, index=0): None
+14.1158 	EXP 	GratingStim: autoDraw = False
+14.1158 	EXP 	GratingStim: autoDraw = False
+14.1158 	EXP 	GratingStim: autoDraw = False
+14.1158 	EXP 	GratingStim: autoDraw = True
+14.1667 	EXP 	GratingStim: autoDraw = False
+14.1667 	EXP 	GratingStim: autoDraw = True
+14.1829 	EXP 	New trial (rep=13, index=0): None
+14.1993 	EXP 	GratingStim: autoDraw = False
+14.1993 	EXP 	GratingStim: autoDraw = False
+14.1993 	EXP 	GratingStim: autoDraw = False
+14.1993 	EXP 	GratingStim: autoDraw = True
+14.2506 	EXP 	GratingStim: autoDraw = False
+14.2506 	EXP 	GratingStim: autoDraw = True
+14.2689 	EXP 	New trial (rep=14, index=0): None
+14.2848 	EXP 	GratingStim: autoDraw = False
+14.2848 	EXP 	GratingStim: autoDraw = False
+14.2848 	EXP 	GratingStim: autoDraw = False
+14.2848 	EXP 	GratingStim: autoDraw = True
+14.3328 	EXP 	GratingStim: autoDraw = False
+14.3328 	EXP 	GratingStim: autoDraw = True
+14.3508 	EXP 	New trial (rep=15, index=0): None
+14.3739 	EXP 	GratingStim: autoDraw = False
+14.3739 	EXP 	GratingStim: autoDraw = False
+14.3739 	EXP 	GratingStim: autoDraw = False
+14.3739 	EXP 	GratingStim: autoDraw = True
+14.4188 	EXP 	GratingStim: autoDraw = False
+14.4188 	EXP 	GratingStim: autoDraw = True
+14.4346 	EXP 	New trial (rep=16, index=0): None
+14.4537 	EXP 	GratingStim: autoDraw = False
+14.4537 	EXP 	GratingStim: autoDraw = False
+14.4537 	EXP 	GratingStim: autoDraw = False
+14.4537 	EXP 	GratingStim: autoDraw = True
+14.5011 	EXP 	GratingStim: autoDraw = False
+14.5011 	EXP 	GratingStim: autoDraw = True
+14.5226 	EXP 	New trial (rep=17, index=0): None
+14.5379 	EXP 	GratingStim: autoDraw = False
+14.5379 	EXP 	GratingStim: autoDraw = False
+14.5379 	EXP 	GratingStim: autoDraw = False
+14.5379 	EXP 	GratingStim: autoDraw = True
+14.5878 	EXP 	GratingStim: autoDraw = False
+14.5878 	EXP 	GratingStim: autoDraw = True
+14.6036 	EXP 	New trial (rep=18, index=0): None
+14.6197 	EXP 	GratingStim: autoDraw = False
+14.6197 	EXP 	GratingStim: autoDraw = False
+14.6197 	EXP 	GratingStim: autoDraw = False
+14.6197 	EXP 	GratingStim: autoDraw = True
+14.6689 	EXP 	GratingStim: autoDraw = False
+14.6689 	EXP 	GratingStim: autoDraw = True
+14.6858 	EXP 	New trial (rep=19, index=0): None
+14.7015 	EXP 	GratingStim: autoDraw = False
+14.7015 	EXP 	GratingStim: autoDraw = False
+14.7015 	EXP 	GratingStim: autoDraw = False
+14.7015 	EXP 	GratingStim: autoDraw = True
+14.7547 	EXP 	GratingStim: autoDraw = False
+14.7547 	EXP 	GratingStim: autoDraw = True
+14.7724 	EXP 	New trial (rep=20, index=0): None
+14.7880 	EXP 	GratingStim: autoDraw = False
+14.7880 	EXP 	GratingStim: autoDraw = False
+14.7880 	EXP 	GratingStim: autoDraw = False
+14.7880 	EXP 	GratingStim: autoDraw = True
+14.8366 	EXP 	GratingStim: autoDraw = False
+14.8366 	EXP 	GratingStim: autoDraw = True
+14.8536 	EXP 	New trial (rep=21, index=0): None
+14.8698 	EXP 	GratingStim: autoDraw = False
+14.8698 	EXP 	GratingStim: autoDraw = False
+14.8698 	EXP 	GratingStim: autoDraw = False
+14.8698 	EXP 	GratingStim: autoDraw = True
+14.9184 	EXP 	GratingStim: autoDraw = False
+14.9184 	EXP 	GratingStim: autoDraw = True
+14.9361 	EXP 	New trial (rep=22, index=0): None
+14.9518 	EXP 	GratingStim: autoDraw = False
+14.9518 	EXP 	GratingStim: autoDraw = False
+14.9518 	EXP 	GratingStim: autoDraw = False
+14.9518 	EXP 	GratingStim: autoDraw = True
+15.0018 	EXP 	GratingStim: autoDraw = False
+15.0018 	EXP 	GratingStim: autoDraw = True
+15.0227 	EXP 	New trial (rep=23, index=0): None
+15.0384 	EXP 	GratingStim: autoDraw = False
+15.0384 	EXP 	GratingStim: autoDraw = False
+15.0384 	EXP 	GratingStim: autoDraw = False
+15.0384 	EXP 	GratingStim: autoDraw = True
+15.0866 	EXP 	GratingStim: autoDraw = False
+15.0866 	EXP 	GratingStim: autoDraw = True
+15.1038 	EXP 	New trial (rep=24, index=0): None
+15.1198 	EXP 	GratingStim: autoDraw = False
+15.1198 	EXP 	GratingStim: autoDraw = False
+15.1198 	EXP 	GratingStim: autoDraw = False
+15.1198 	EXP 	GratingStim: autoDraw = True
+15.1687 	EXP 	GratingStim: autoDraw = False
+15.1687 	EXP 	GratingStim: autoDraw = True
+15.1896 	EXP 	New trial (rep=25, index=0): None
+15.2021 	EXP 	GratingStim: autoDraw = False
+15.2021 	EXP 	GratingStim: autoDraw = False
+15.2021 	EXP 	GratingStim: autoDraw = False
+15.2021 	EXP 	GratingStim: autoDraw = True
+15.2523 	EXP 	GratingStim: autoDraw = False
+15.2523 	EXP 	GratingStim: autoDraw = True
+15.2718 	EXP 	New trial (rep=26, index=0): None
+15.2868 	EXP 	GratingStim: autoDraw = False
+15.2868 	EXP 	GratingStim: autoDraw = False
+15.2868 	EXP 	GratingStim: autoDraw = False
+15.2868 	EXP 	GratingStim: autoDraw = True
+15.3366 	EXP 	GratingStim: autoDraw = False
+15.3366 	EXP 	GratingStim: autoDraw = True
+15.3537 	EXP 	New trial (rep=27, index=0): None
+15.3690 	EXP 	GratingStim: autoDraw = False
+15.3690 	EXP 	GratingStim: autoDraw = False
+15.3690 	EXP 	GratingStim: autoDraw = False
+15.3690 	EXP 	GratingStim: autoDraw = True
+15.4190 	EXP 	GratingStim: autoDraw = False
+15.4190 	EXP 	GratingStim: autoDraw = True
+15.4373 	EXP 	New trial (rep=28, index=0): None
+15.4525 	EXP 	GratingStim: autoDraw = False
+15.4525 	EXP 	GratingStim: autoDraw = False
+15.4525 	EXP 	GratingStim: autoDraw = False
+15.4525 	EXP 	GratingStim: autoDraw = True
+15.5025 	EXP 	GratingStim: autoDraw = False
+15.5025 	EXP 	GratingStim: autoDraw = True
+15.5222 	EXP 	New trial (rep=29, index=0): None
+15.5366 	EXP 	GratingStim: autoDraw = False
+15.5366 	EXP 	GratingStim: autoDraw = False
+15.5366 	EXP 	GratingStim: autoDraw = False
+15.5366 	EXP 	GratingStim: autoDraw = True
+15.5860 	EXP 	GratingStim: autoDraw = False
+15.5860 	EXP 	GratingStim: autoDraw = True
+15.6114 	EXP 	New trial (rep=1, index=0): None
+15.6231 	EXP 	GratingStim: autoDraw = False
+15.6231 	EXP 	GratingStim: autoDraw = False
+15.6231 	EXP 	GratingStim: autoDraw = False
+15.6231 	EXP 	GratingStim: autoDraw = True
+17.6065 	EXP 	Created sequence: sequential, trialTypes=1, nReps=30, seed=None
+17.6096 	EXP 	New trial (rep=0, index=0): None
+17.6230 	EXP 	GratingStim: autoDraw = False
+17.6230 	EXP 	GratingStim: autoDraw = False
+17.6230 	EXP 	GratingStim: autoDraw = True
+17.6722 	EXP 	GratingStim: autoDraw = False
+17.6722 	EXP 	GratingStim: autoDraw = True
+17.6931 	EXP 	New trial (rep=1, index=0): None
+17.7087 	EXP 	GratingStim: autoDraw = False
+17.7087 	EXP 	GratingStim: autoDraw = False
+17.7087 	EXP 	GratingStim: autoDraw = False
+17.7087 	EXP 	GratingStim: autoDraw = True
+17.7567 	EXP 	GratingStim: autoDraw = False
+17.7567 	EXP 	GratingStim: autoDraw = True
+17.7747 	EXP 	New trial (rep=2, index=0): None
+17.7898 	EXP 	GratingStim: autoDraw = False
+17.7898 	EXP 	GratingStim: autoDraw = False
+17.7898 	EXP 	GratingStim: autoDraw = False
+17.7898 	EXP 	GratingStim: autoDraw = True
+17.8390 	EXP 	GratingStim: autoDraw = False
+17.8390 	EXP 	GratingStim: autoDraw = True
+17.8567 	EXP 	New trial (rep=3, index=0): None
+17.8756 	EXP 	GratingStim: autoDraw = False
+17.8756 	EXP 	GratingStim: autoDraw = False
+17.8756 	EXP 	GratingStim: autoDraw = False
+17.8756 	EXP 	GratingStim: autoDraw = True
+17.9225 	EXP 	GratingStim: autoDraw = False
+17.9225 	EXP 	GratingStim: autoDraw = True
+17.9405 	EXP 	New trial (rep=4, index=0): None
+17.9577 	EXP 	GratingStim: autoDraw = False
+17.9577 	EXP 	GratingStim: autoDraw = False
+17.9577 	EXP 	GratingStim: autoDraw = False
+17.9577 	EXP 	GratingStim: autoDraw = True
+18.0069 	EXP 	GratingStim: autoDraw = False
+18.0069 	EXP 	GratingStim: autoDraw = True
+18.0237 	EXP 	New trial (rep=5, index=0): None
+18.0394 	EXP 	GratingStim: autoDraw = False
+18.0394 	EXP 	GratingStim: autoDraw = False
+18.0394 	EXP 	GratingStim: autoDraw = False
+18.0394 	EXP 	GratingStim: autoDraw = True
+18.0931 	EXP 	GratingStim: autoDraw = False
+18.0931 	EXP 	GratingStim: autoDraw = True
+18.1075 	EXP 	New trial (rep=6, index=0): None
+18.1228 	EXP 	GratingStim: autoDraw = False
+18.1228 	EXP 	GratingStim: autoDraw = False
+18.1228 	EXP 	GratingStim: autoDraw = False
+18.1228 	EXP 	GratingStim: autoDraw = True
+18.1746 	EXP 	GratingStim: autoDraw = False
+18.1746 	EXP 	GratingStim: autoDraw = True
+18.1916 	EXP 	New trial (rep=7, index=0): None
+18.2079 	EXP 	GratingStim: autoDraw = False
+18.2079 	EXP 	GratingStim: autoDraw = False
+18.2079 	EXP 	GratingStim: autoDraw = False
+18.2079 	EXP 	GratingStim: autoDraw = True
+18.2568 	EXP 	GratingStim: autoDraw = False
+18.2568 	EXP 	GratingStim: autoDraw = True
+18.2741 	EXP 	New trial (rep=8, index=0): None
+18.2899 	EXP 	GratingStim: autoDraw = False
+18.2899 	EXP 	GratingStim: autoDraw = False
+18.2899 	EXP 	GratingStim: autoDraw = False
+18.2899 	EXP 	GratingStim: autoDraw = True
+18.3398 	EXP 	GratingStim: autoDraw = False
+18.3398 	EXP 	GratingStim: autoDraw = True
+18.3580 	EXP 	New trial (rep=9, index=0): None
+18.3731 	EXP 	GratingStim: autoDraw = False
+18.3731 	EXP 	GratingStim: autoDraw = False
+18.3731 	EXP 	GratingStim: autoDraw = False
+18.3731 	EXP 	GratingStim: autoDraw = True
+18.4248 	EXP 	GratingStim: autoDraw = False
+18.4248 	EXP 	GratingStim: autoDraw = True
+18.4416 	EXP 	New trial (rep=10, index=0): None
+18.4578 	EXP 	GratingStim: autoDraw = False
+18.4578 	EXP 	GratingStim: autoDraw = False
+18.4578 	EXP 	GratingStim: autoDraw = False
+18.4578 	EXP 	GratingStim: autoDraw = True
+18.5066 	EXP 	GratingStim: autoDraw = False
+18.5066 	EXP 	GratingStim: autoDraw = True
+18.5276 	EXP 	New trial (rep=11, index=0): None
+18.5400 	EXP 	GratingStim: autoDraw = False
+18.5400 	EXP 	GratingStim: autoDraw = False
+18.5400 	EXP 	GratingStim: autoDraw = False
+18.5400 	EXP 	GratingStim: autoDraw = True
+18.5936 	EXP 	GratingStim: autoDraw = False
+18.5936 	EXP 	GratingStim: autoDraw = True
+18.6092 	EXP 	New trial (rep=12, index=0): None
+18.6235 	EXP 	GratingStim: autoDraw = False
+18.6235 	EXP 	GratingStim: autoDraw = False
+18.6235 	EXP 	GratingStim: autoDraw = False
+18.6235 	EXP 	GratingStim: autoDraw = True
+18.6746 	EXP 	GratingStim: autoDraw = False
+18.6746 	EXP 	GratingStim: autoDraw = True
+18.6921 	EXP 	New trial (rep=13, index=0): None
+18.7069 	EXP 	GratingStim: autoDraw = False
+18.7069 	EXP 	GratingStim: autoDraw = False
+18.7069 	EXP 	GratingStim: autoDraw = False
+18.7069 	EXP 	GratingStim: autoDraw = True
+18.7570 	EXP 	GratingStim: autoDraw = False
+18.7570 	EXP 	GratingStim: autoDraw = True
+18.7750 	EXP 	New trial (rep=14, index=0): None
+18.7938 	EXP 	GratingStim: autoDraw = False
+18.7938 	EXP 	GratingStim: autoDraw = False
+18.7938 	EXP 	GratingStim: autoDraw = False
+18.7938 	EXP 	GratingStim: autoDraw = True
+18.8437 	EXP 	GratingStim: autoDraw = False
+18.8437 	EXP 	GratingStim: autoDraw = True
+18.8597 	EXP 	New trial (rep=15, index=0): None
+18.8746 	EXP 	GratingStim: autoDraw = False
+18.8746 	EXP 	GratingStim: autoDraw = False
+18.8746 	EXP 	GratingStim: autoDraw = False
+18.8746 	EXP 	GratingStim: autoDraw = True
+18.9246 	EXP 	GratingStim: autoDraw = False
+18.9246 	EXP 	GratingStim: autoDraw = True
+18.9411 	DATA 	Keypress: escape

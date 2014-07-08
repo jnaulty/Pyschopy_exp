@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy2 Experiment Builder (v1.80.06), July 05, 2014, at 15:12
+This experiment was created using PsychoPy2 Experiment Builder (v1.80.06), July 08, 2014, at 11:54
 If you publish work using this script please cite the relevant PsychoPy publications
   Peirce, JW (2007) PsychoPy - Psychophysics software in Python. Journal of Neuroscience Methods, 162(1-2), 8-13.
   Peirce, JW (2009) Generating stimuli for neuroscience using PsychoPy. Frontiers in Neuroinformatics, 2:10. doi: 10.3389/neuro.11.010.2008
@@ -326,14 +326,20 @@ for thisTrial_120 in trials_120:
             win.flip()
         else:  # this Routine was not non-slip safe so reset non-slip timer
             routineTimer.reset()
-            
     
     #-------Ending Routine "InterTrial"-------
     for thisComponent in InterTrialComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-
+    #import serial #BP Serial functions
+    #-------BP serial port-------
+    #ser = serial.Serial('/dev/cu.usbserial-FTGQVV1C', baudrate=57600, bytesize=8, parity='N', stopbits=1, timeout=None, xonxoff=1) #xonxoff was 1
     
+    #import time #BP to use time.time
+    
+    #No longer need this code.
+    
+
     
     # set up handler to look after randomisation of conditions etc
     withinATrial_fill_4_sec = data.TrialHandler(nReps=30, method='sequential', 
@@ -360,7 +366,8 @@ for thisTrial_120 in trials_120:
         frameN = -1
         # update component parameters for each repeat
         #tag data that is being collected.
-
+        #tag data that is being collected.
+        
         # keep track of which components have finished
         trialComponents = []
         trialComponents.append(pattern1)
@@ -380,8 +387,8 @@ for thisTrial_120 in trials_120:
             t=time.time()#t=time.clock() # what is the difference?
             timeString= "%.5f" %t
             thisExp.addData('FrameTimeStamps',timeString)
-            #tag data here
             collector.tag(70)
+            
             
             # *pattern1* updates
             if frameN >= 0.0 and pattern1.status == NOT_STARTED:
@@ -512,7 +519,7 @@ for thisComponent in endOfExperimentComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 
-ser.close() #BP
+
 
 win.close()
 core.quit()
