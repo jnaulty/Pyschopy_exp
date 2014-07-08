@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy2 Experiment Builder (v1.80.06), June 28, 2014, at 00:44
+This experiment was created using PsychoPy2 Experiment Builder (v1.80.06), July 05, 2014, at 15:12
 If you publish work using this script please cite the relevant PsychoPy publications
   Peirce, JW (2007) PsychoPy - Psychophysics software in Python. Journal of Neuroscience Methods, 162(1-2), 8-13.
   Peirce, JW (2009) Generating stimuli for neuroscience using PsychoPy. Frontiers in Neuroinformatics, 2:10. doi: 10.3389/neuro.11.010.2008
@@ -14,6 +14,7 @@ import numpy as np  # whole numpy lib is available, prepend 'np.'
 from numpy import sin, cos, tan, log, log10, pi, average, sqrt, std, deg2rad, rad2deg, linspace, asarray
 from numpy.random import random, randint, normal, shuffle
 import os  # handy system and path functions
+import time
 
 # Store info about the experiment session
 expName = 'SSVP5_75'  # from the Builder filename that created this script
@@ -41,8 +42,8 @@ endExpNow = False  # flag for 'escape' or other condition => quit the exp
 # Start Code - component code to be run before the window creation
 
 # Setup the Window
-win = visual.Window(size=(1280, 800), fullscr=True, screen=0, allowGUI=False, allowStencil=False,
-    monitor='Desktop external monitor', color=[0,0,0], colorSpace='rgb',
+win = visual.Window(size=[1280, 800], fullscr=False, screen=0, allowGUI=True, allowStencil=False,
+    monitor='screen', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True,
     units='cm')
 # store frame rate of monitor if we can measure it successfully
@@ -72,11 +73,10 @@ fixation = visual.GratingStim(win=win, name='fixation',
     ori=0, pos=[0, 0], size=[0.05, 0.05], sf=None, phase=0.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     texRes=128, interpolate=True, depth=-1.0)
-    
 ##start collecting
-from Python_OpenBCI import openbci, csv_collector
+from Python_OpenBCI import open_bci, csv_collector
 
-collector = CSVCollector(fname = exp['participant'])
+collector = csv_collector.CSVCollector()
 
 collector.start()
 
@@ -326,23 +326,17 @@ for thisTrial_120 in trials_120:
             win.flip()
         else:  # this Routine was not non-slip safe so reset non-slip timer
             routineTimer.reset()
+            
     
     #-------Ending Routine "InterTrial"-------
     for thisComponent in InterTrialComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    #import serial #BP Serial functions
-    #-------BP serial port-------
-    #ser = serial.Serial('/dev/cu.usbserial-FTGQVV1C', baudrate=57600, bytesize=8, parity='N', stopbits=1, timeout=None, xonxoff=1) #xonxoff was 1
-    
-    #import time #BP to use time.time
-    
-    #No longer need this code.
-    
+
     
     
     # set up handler to look after randomisation of conditions etc
-    withinATrial_fill_4_sec = data.TrialHandler(nReps=30, method=u'sequential', 
+    withinATrial_fill_4_sec = data.TrialHandler(nReps=30, method='sequential', 
         extraInfo=expInfo, originPath=None,
         trialList=[None],
         seed=None, name='withinATrial_fill_4_sec')
@@ -366,8 +360,7 @@ for thisTrial_120 in trials_120:
         frameN = -1
         # update component parameters for each repeat
         #tag data that is being collected.
-        if firstLoop==True:
-            collector.tag()
+
         # keep track of which components have finished
         trialComponents = []
         trialComponents.append(pattern1)
@@ -387,7 +380,8 @@ for thisTrial_120 in trials_120:
             t=time.time()#t=time.clock() # what is the difference?
             timeString= "%.5f" %t
             thisExp.addData('FrameTimeStamps',timeString)
-            
+            #tag data here
+            collector.tag(70)
             
             # *pattern1* updates
             if frameN >= 0.0 and pattern1.status == NOT_STARTED:
@@ -431,6 +425,7 @@ for thisTrial_120 in trials_120:
         for thisComponent in trialComponents:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
+                collector.tag(0)
         thisExp.addData('frameNumber',frameN)
         thisExp.nextEntry()
         

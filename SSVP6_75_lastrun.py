@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy2 Experiment Builder (v1.80.06), July 01, 2014, at 16:07
+This experiment was created using PsychoPy2 Experiment Builder (v1.80.06), July 05, 2014, at 15:11
 If you publish work using this script please cite the relevant PsychoPy publications
   Peirce, JW (2007) PsychoPy - Psychophysics software in Python. Journal of Neuroscience Methods, 162(1-2), 8-13.
   Peirce, JW (2009) Generating stimuli for neuroscience using PsychoPy. Frontiers in Neuroinformatics, 2:10. doi: 10.3389/neuro.11.010.2008
@@ -41,8 +41,8 @@ endExpNow = False  # flag for 'escape' or other condition => quit the exp
 # Start Code - component code to be run before the window creation
 
 # Setup the Window
-win = visual.Window(size=(1280, 800), fullscr=True, screen=0, allowGUI=False, allowStencil=False,
-    monitor='Desktop external monitor', color=[0,0,0], colorSpace='rgb',
+win = visual.Window(size=[1280, 800], fullscr=False, screen=0, allowGUI=True, allowStencil=False,
+    monitor='screen', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True,
     units='cm')
 # store frame rate of monitor if we can measure it successfully
@@ -73,9 +73,9 @@ fixation = visual.GratingStim(win=win, name='fixation',
     color=[1,1,1], colorSpace='rgb', opacity=1,
     texRes=128, interpolate=True, depth=-1.0)
 ##start collecting
-from Python_OpenBCI import openbci, csv_collector
+from Python_OpenBCI import open_bci, csv_collector
 
-collector = CSVCollector(fname = exp['participant'])
+collector = csv_collector.CSVCollector()
 
 collector.start()
 
@@ -338,7 +338,7 @@ for thisTrial_120 in trials_120:
     
     #No longer need this code.
     
-    
+    collector.get_tag(70)
     
     # set up handler to look after randomisation of conditions etc
     withinATrial_fill_4_sec = data.TrialHandler(nReps=30, method='sequential', 

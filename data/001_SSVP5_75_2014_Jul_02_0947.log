@@ -1,0 +1,13 @@
+3.4371 	EXP 	Set Window color=[ 0.  0.  0.] (rgb)
+4.8955 	WARNING 	t of last frame was 19.69ms (=1/50)
+4.9456 	WARNING 	t of last frame was 19.72ms (=1/50)
+5.0792 	WARNING 	t of last frame was 19.81ms (=1/50)
+5.2295 	WARNING 	t of last frame was 19.81ms (=1/50)
+5.2797 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+6.4321 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+6.6446 	EXP 	Created instructions = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font=UNKNOWN, fontFiles=UNKNOWN, height=117, italic=False, name='instructions', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=unicode(...), units='cm', win=Window(...), wrapWidth=UNKNOWN)
+6.6467 	EXP 	Created text = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font=UNKNOWN, fontFiles=UNKNOWN, height=0, italic=False, name='text', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text='', units='cm', win=Window(...), wrapWidth=UNKNOWN)
+6.6559 	EXP 	Created fixation = GratingStim(autoDraw=False, autoLog=True, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, interpolate=True, mask=None, maskParams=None, name='fixation', opacity=1.0, ori=0.0, phase=array([ 0.,  0.]), pos=array([ 0.,  0.]), rgbPedestal=array([ 0.,  0.,  0.]), sf=array([ 1.,  1.]), size=array([ 0.05,  0.05]), tex='gauss', texRes=128, units='cm', win=Window(...))

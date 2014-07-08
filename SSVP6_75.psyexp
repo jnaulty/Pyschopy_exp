@@ -2,11 +2,11 @@
   <Settings>
     <Param name="Show mouse" val="False" valType="bool" updates="None"/>
     <Param name="Data filename" val="'data/%s_%s_%s' %(expInfo['participant'], expName, expInfo['date'])" valType="code" updates="None"/>
-    <Param name="Monitor" val="Desktop external monitor" valType="str" updates="None"/>
+    <Param name="Monitor" val="screen" valType="str" updates="None"/>
     <Param name="Enable Escape" val="True" valType="bool" updates="None"/>
     <Param name="color" val="$[0,0,0]" valType="str" updates="None"/>
-    <Param name="Window size (pixels)" val="[1280, 768]" valType="code" updates="None"/>
-    <Param name="Full-screen window" val="True" valType="bool" updates="None"/>
+    <Param name="Window size (pixels)" val="[1280, 800]" valType="code" updates="None"/>
+    <Param name="Full-screen window" val="False" valType="bool" updates="None"/>
     <Param name="colorSpace" val="rgb" valType="str" updates="None"/>
     <Param name="Experiment info" val="{u'session': u'001', u'participant': u'001'}" valType="code" updates="None"/>
     <Param name="Save csv file" val="True" valType="bool" updates="None"/>
@@ -50,7 +50,7 @@
         <Param name="name" val="Send_Code_Time" valType="code" updates="None"/>
         <Param name="Each Frame" val="" valType="extendedCode" updates="constant"/>
         <Param name="Begin Routine" val="" valType="extendedCode" updates="constant"/>
-        <Param name="End Routine" val="#import serial #BP Serial functions&#10;#-------BP serial port-------&#10;#ser = serial.Serial('/dev/cu.usbserial-FTGQVV1C', baudrate=57600, bytesize=8, parity='N', stopbits=1, timeout=None, xonxoff=1) #xonxoff was 1&#10;&#10;#import time #BP to use time.time&#10;&#10;#No longer need this code.&#10;&#10;" valType="extendedCode" updates="constant"/>
+        <Param name="End Routine" val="#import serial #BP Serial functions&#10;#-------BP serial port-------&#10;#ser = serial.Serial('/dev/cu.usbserial-FTGQVV1C', baudrate=57600, bytesize=8, parity='N', stopbits=1, timeout=None, xonxoff=1) #xonxoff was 1&#10;&#10;#import time #BP to use time.time&#10;&#10;#No longer need this code.&#10;&#10;collector.get_tag(70)" valType="extendedCode" updates="constant"/>
         <Param name="End Experiment" val="ser.close() #BP" valType="extendedCode" updates="constant"/>
       </CodeComponent>
     </Routine>
@@ -186,7 +186,7 @@
         <Param name="size" val="[0.05, 0.05]" valType="code" updates="constant"/>
       </GratingComponent>
       <CodeComponent name="start_collecting">
-        <Param name="Begin Experiment" val="##start collecting&#10;from Python_OpenBCI import openbci, csv_collector&#10;&#10;collector = CSVCollector(fname = exp['participant'])&#10;&#10;collector.start()" valType="extendedCode" updates="constant"/>
+        <Param name="Begin Experiment" val="##start collecting&#10;from Python_OpenBCI import open_bci, csv_collector&#10;&#10;collector = csv_collector.CSVCollector()&#10;&#10;collector.start()" valType="extendedCode" updates="constant"/>
         <Param name="name" val="start_collecting" valType="code" updates="None"/>
         <Param name="Each Frame" val="" valType="extendedCode" updates="constant"/>
         <Param name="Begin Routine" val="" valType="extendedCode" updates="constant"/>
